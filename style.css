@@ -18,7 +18,7 @@
 }
 .containerpg2{
     width: 100%;
-    height:100%;
+    padding-top: 40px;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/building-png.png);
     background-position: center;
     background-size: cover;
@@ -46,8 +46,11 @@
     margin-top: 20px;
 }
 .logo{
-       width: 140px;
-       margin-top: 60px;
+    width: 220px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .menu-icon{
     width: 30px;
@@ -223,5 +226,16 @@ background: none;
 }
 .containerpg3{
     height: 100%;
+}
+.logo{
+    display: none;
+}
+nav ul li a:hover{
+    transition: none;
+    color: white;
+    border: none;
+    border-radius: none;
+    padding: none;
+
 }
 }

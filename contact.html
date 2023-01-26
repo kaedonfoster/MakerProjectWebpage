@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Poseidon Consulting Inc.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+         <div class="navbar" id="mynavbar">
+            <img src="images/drawing-3 (1).png" class="logo">
+            <nav>
+                <ul>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>  
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Award Winning Projects</a></li>
+                    <li><a href="mechanical.html">Mechanical Department</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+       <div class="contactcontainer">
+        <form onsubmit="SendEmail(); reset(); return false;">
+            <h3>CONTACT</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+       name = document.getElementById("name").value
+       email = document.getElementById("email").value
+        text = document.getElementById("text").value
+        message = document.getElementById("message").value
+ 
+        function SendEmail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "thegerpersom@gmail.com",
+            Password : "24AB47DD0282E1ED763687AEE47FD561D904",
+            From : 'thegerpersom@gmail.com',
+            To : "kaedonfoster9@gmail.com",
+            Subject : "email from: " + document.getElementById("email").value + "phone number",
+            Body : "name: " + document.getElementById("name").value  + " |" + "email: " + document.getElementById("email").value + " |" + "phone number: " + document.getElementById("phone").value + "message: " + document.getElementById("message").value + " |",
+        })
+        .then(function (message) {
+          alert("email sent successfully")
+        });
+    }
+
+
+    </script>
+    </div>
+<style>
+    .contactcontainer{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contactcontainer form{
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw 4vw;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 10px;
+    }
+    .contactcontainer form h3{
+        color: #555;
+        font-weight: 800;
+        margin-bottom: 20px;
+
+    }
+    .contactcontainer form input, form textarea{
+        border: 0;
+        margin: 10px 0;
+        padding: 20px;
+        outline: none;
+        background: #f5f5f5;
+        font-size: 16px;
+    }
+    .contactcontainer form button{
+        padding: 15px;
+        background: gray;
+        color: #fff;
+        font-size: 18px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        border-radius: 25px;
+        /*margin 20px auto 0*/
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mynavbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+</body>
+</html>

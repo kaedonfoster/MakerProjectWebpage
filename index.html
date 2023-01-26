@@ -21,7 +21,7 @@
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="projects.html">Award Winning Projects</a></li>
                     <li><a href="mechanical.html">Mechanical Department</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
          </div>
@@ -30,7 +30,7 @@
                 <h1>Poseidon<br> Consulting Inc.</h1>   
                 <p>Poseidon Consulting Inc (PCI) is an engineering firm operating in the lower mainland of British Columbia, Vancouver, Canada. 
                 PCI has in-house professional engineers and designers to cater for all your mechanical design requirements. </p>
-                <button type="button">Contact</button>
+                <button type="button" onClick="buttonClick()">Contact</button>
             </div>
             <div class="col">
             <div class="card card1">
@@ -54,6 +54,9 @@
           } else {
             x.className = "navbar";
           }
+        }
+        function buttonClick(){
+            window.location.href="contact.html";  
         }
         </script>
 </body>
