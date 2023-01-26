@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Poseidon Consulting Inc.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="containerpg3">
+    <div class="navbar" id="mynavbar">
+      <img src="images/drawing-3 (1).png" class="logo">
+      <nav>
+        <ul>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Award Winning Projects</a></li>
+          <li><a class="active" href="">Mechanical Department</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mech">
+      <h1>Mechanical Department - Fire Sprinklers</h1>
+      <p>Poseidon Consulting Inc. (PEI) provides innovative and effective professional engineering services to Architects, Owner, Contractors and Sub-contractors. Poseidon Consulting Inc is a small design firm offering different levels of design services similar to large consulting services at competitive rates. Being one 
+        of the exclusive Mechanical Consulting Firm, we provide designs in different areas, such as follows:</p>
+      <ul>
+        <img src="images/construction.jpg">
+
+        <li>Apartments</li>
+        <li>High Rises</li>
+        <li>Retail</li>
+        <li>Warehouses</li>
+        <li>Schools</li>
+        <li>Recreational Facilities</li>
+        <li>Seniors Homes</li>
+        <li>Industrial Projects</li>
+        <li>Oil and Gas</li>
+      </ul>
+      <br><br>
+<p>Poseidon Consulting Inc has combined experiences of its different resourceful engineers and has the unique ability to foresee projects through, from conception stage to completion. Poseidon Consulting Inc staff has been involved in several projects throughout the Province of British Columbia.</p>
+<br>
+<p>We have in house Registered Professional Engineers (P.Eng) and strive to provide good engineering practices. We look forward to hearing from you and assisting you with your future projects needs.</p>
+
+</div>
+
+<style>
+  .mech h1{
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  .mech p{
+    font-size: 15px;
+    width: 60%;
+    margin-bottom: 30px;
+  }
+  .mech ul li{
+
+    color: white;
+    margin-top: 10px;
+
+  }
+  .mech img{
+    float: right;
+    width: 25%;
+    height: 25%;
+
+  }
+
+  .mech ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.mech ul li:before
+{
+    content: '\2713';
+    margin: 0 1em;    /* any design */
+}
+</style>
+
+
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mynavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+</body>
+
+</html>

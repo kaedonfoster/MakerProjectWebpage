@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/city-png.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow:hidden;
+
+}
+.containerpg2{
+    width: 100%;
+    height:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/building-png.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow:hidden;
+
+}
+.containerpg3{
+    width: 100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/360_F_209955711_c8iEke4oZTIoMopdbFzJbnacWnIOAUBc.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.logo{
+       width: 140px;
+       margin-top: 60px;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+    
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.active{
+    cursor: default;
+    background-color: gray;
+    border: 2px solid gray;
+    border-radius: 12px;
+    padding: 5px;
+}
+.active:hover{
+    transition: none;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 12px;
+    padding: 5px;
+
+}
+nav ul li a:hover{
+    transition: 0.2s ease-in;
+    color: lightgray;
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 4px;
+
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+   
+}
+.col{
+    flex-basis: 50%;
+    width: 20%;
+}
+h1{
+    color: #fff;
+    font-size: 80px; /*53*/
+    margin-bottom: 15px; /*15*/
+}
+p{
+    color: #fff;
+    font-size: 18px;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in;  
+}
+.navbar .icon {
+    color: white;
+    font-size: 20px;
+    display: none;
+    position: relative;
+    margin-top: 35px;
+  }
+  .navbar .icon:hover {
+    transition: 0.3s ease-in;  
+    transform: translateY(-4px);
+  }
+button:hover{
+background: lightgray;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-out;
+}
+.card1{
+    background-image: url(images/civic-plaza.jpg);  
+}
+.card2{
+    background-image: url(images/olympics.jpg);  
+}
+.card3{
+    background-image: url(images/CommunityCentre.jpg);  
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+  @media (max-width: 1109px) {
+.card{
+    display: none;
+    }
+.navbar .icon{
+        display:block;
+      }
+.navbar ul li a{
+    display: none;
+}
+.navbar.responsive ul li a{
+    display:inline;
+  }
+nav ul li{
+    display: block;
+    margin-right: 20px;
+    margin-top:3px;
+}
+  h1{
+    font-size: 40px;
+  }
+  p{
+    font-size: 16px;
+    width: 130%;
+  }
+  .row{
+    height: 70%;
+}
+.active{
+    font-size: 11px;
+    padding: 4px;
+}
+.active:hover{
+    padding: 4px;
+}
+nav ul li:hover{
+    padding: 2px;
+}
+.section img{
+    display: none;
+  }
+  .section2 img{
+   width: 100%;
+  }
+  .section3 img{
+    width: 100%;
+  }
+.section {  
+background: none;
+}
+.section h1{
+    font-size: 2px;
+}
+.containerpg3{
+    height: 100%;
+}
+}

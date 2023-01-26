@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Poseidon Consulting Inc.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+         <div class="navbar" id="mynavbar">
+            <img src="images/drawing-3 (1).png" class="logo">
+            <nav>
+                <ul>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>  
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="projects.html">Award Winning Projects</a></li>
+                    <li><a href="mechanical.html">Mechanical Department</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+         </div>
+         <div class="row">
+            <div class="col">
+                <h1>Poseidon<br> Consulting Inc.</h1>   
+                <p>Poseidon Consulting Inc (PCI) is an engineering firm operating in the lower mainland of British Columbia, Vancouver, Canada. 
+                PCI has in-house professional engineers and designers to cater for all your mechanical design requirements. </p>
+                <button type="button">Contact</button>
+            </div>
+            <div class="col">
+            <div class="card card1">
+                <a href="projects.html #part1"><h5>3 Civic Plaza (53 Story Tower)</h5></a>
+            </div>
+            <div class="card card2">
+                <a href="projects.html #part2"><h5>Vancouver Olympic Village</h5></a>
+            </div><br>
+            
+            <div class="card card3">
+                <a href="projects.html #sunsett"><h5>Vancouver Sunset Community Centre</h5></a>
+            </div>
+             </div>
+         </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mynavbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+</body>
+</html>
