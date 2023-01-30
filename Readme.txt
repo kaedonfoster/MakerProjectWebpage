@@ -1,4 +1,4 @@
-This website was made for my dads company. Note, all the written text/titles are copied from his website he is currently using: https://www.p-consulting.ca/
+This website was made for my dads company. Note, all the written text/titles/images are copied from his website he is currently using: https://www.p-consulting.ca/
 
 Test website on GitHub-Pages: https://kaedonfoster.github.io/MakerProjectWebpage/
 
